@@ -1,0 +1,63 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f0f0, #c9d6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+.header h1 {
+    font-size: 1.8rem;
+    color: #333;
+}
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+.input-group {
+    display: flex;
+    gap: 8px;
+}
+input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+button {
+    padding: 8px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #555;
+}
+.copy-button {
+    margin-left: 5px;
+}
+.result-card {
+    display: none;
+}
+.toast {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+}

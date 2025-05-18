@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encurtador de URL</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Encurtador de URL</h1>
+            <p>Cole seu URL longo abaixo e obtenha um link mais curto em segundos.</p>
+        </div>
+
+        <div class="card">
+            <form id="shortener-form">
+                <div class="input-group">
+                    <input id="urlInput" type="text" placeholder="Cole seu URL longo aqui" />
+                    <button type="submit" id="shortenButton">Encurtar URL</button>
+                </div>
+                <p id="errorMessage" class="error-message"></p>
+            </form>
+        </div>
+
+        <div id="resultCard" class="card result-card">
+            <p class="result-label">Sua URL encurtada:</p>
+            <div class="result-group">
+                <input id="shortenedUrl" type="text" readonly />
+                <button id="copyButton" class="copy-button">Copiar</button>
+            </div>
+        </div>
+
+        <div id="toast" class="toast">Copiado para a área de transferência!</div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
